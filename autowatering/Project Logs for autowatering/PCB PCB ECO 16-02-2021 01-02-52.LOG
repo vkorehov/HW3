@@ -1,0 +1,792 @@
+Added Component: Designator=A0(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=A1(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=A2(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=A3(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=A4(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=A5(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=A6(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=A7(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=A8(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=A9(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=A10(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=A11(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=A15(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=A16(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=A17(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=C1(FP-C0402-BB-MFG)
+Add component (AddParameter): Name = "Automotive"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance"; Value = "0.10 ?F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Cap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Class L1"; Value = "Passive Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Class L2"; Value = "Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Class L3"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Description"; Value = "CAP CER 0.1UF 10V X5R 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.55mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ipc Land Pattern Name"; Value = "CAPC10050X50"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Kemet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "C0402C104K8PACTU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Description"; Value = "Capacitor 100 nF 10 VDC 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Octopart"; Value = "https://octopart.com/c0402c104k8pactu-kemet-140039"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "C0402-BB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "TRUE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature"; Value = "-55°C to +125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Characteristic"; Value = "X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "15%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Range High"; Value = "+125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Range Low"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.10 ?F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10 V"; VariantName = "[No Variations]"
+Added Component: Designator=C2(FP-C0402-BB-MFG)
+Add component (AddParameter): Name = "Automotive"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance"; Value = "0.10 ?F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Cap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Class L1"; Value = "Passive Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Class L2"; Value = "Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Class L3"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Description"; Value = "CAP CER 0.1UF 10V X5R 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.55mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ipc Land Pattern Name"; Value = "CAPC10050X50"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Kemet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "C0402C104K8PACTU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Description"; Value = "Capacitor 100 nF 10 VDC 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Octopart"; Value = "https://octopart.com/c0402c104k8pactu-kemet-140039"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "C0402-BB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "TRUE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature"; Value = "-55°C to +125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Characteristic"; Value = "X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "15%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Range High"; Value = "+125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Range Low"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.10 ?F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10 V"; VariantName = "[No Variations]"
+Added Component: Designator=C3(FP-C0402-BB-MFG)
+Add component (AddParameter): Name = "Automotive"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance"; Value = "0.10 ?F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Cap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Class L1"; Value = "Passive Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Class L2"; Value = "Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Class L3"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Description"; Value = "CAP CER 0.1UF 10V X5R 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.55mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ipc Land Pattern Name"; Value = "CAPC10050X50"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Kemet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "C0402C104K8PACTU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Description"; Value = "Capacitor 100 nF 10 VDC 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Octopart"; Value = "https://octopart.com/c0402c104k8pactu-kemet-140039"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "C0402-BB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "TRUE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature"; Value = "-55°C to +125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Characteristic"; Value = "X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "15%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Range High"; Value = "+125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Range Low"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.10 ?F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10 V"; VariantName = "[No Variations]"
+Added Component: Designator=C4(AVX-1206-2_L)
+Add component (AddParameter): Name = "Capacitance"; Value = "0.001uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Size/Dimension"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/11787/0900766b80ed4c37-11787781.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "11/2010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.avx.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin SMD, Body 3.4 x 1.8 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "1206GC102KAT1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "2000V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance (%)"; Value = "±10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating DC"; Value = "2000V"; VariantName = "[No Variations]"
+Added Component: Designator=C5(AVX-1206-2_L)
+Add component (AddParameter): Name = "Capacitance"; Value = "0.001uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Size/Dimension"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/11787/0900766b80ed4c37-11787781.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "11/2010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.avx.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin SMD, Body 3.4 x 1.8 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "1206GC102KAT1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "2000V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance (%)"; Value = "±10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating DC"; Value = "2000V"; VariantName = "[No Variations]"
+Added Component: Designator=C6(AVX-1206-2_L)
+Add component (AddParameter): Name = "Capacitance"; Value = "0.001uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Size/Dimension"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/11787/0900766b80ed4c37-11787781.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "11/2010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.avx.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin SMD, Body 3.4 x 1.8 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "1206GC102KAT1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "2000V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance (%)"; Value = "±10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating DC"; Value = "2000V"; VariantName = "[No Variations]"
+Added Component: Designator=C7(AVX-1206-2_L)
+Add component (AddParameter): Name = "Capacitance"; Value = "0.001uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Size/Dimension"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/11787/0900766b80ed4c37-11787781.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "11/2010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "AVX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.avx.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin SMD, Body 3.4 x 1.8 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "1206GC102KAT1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "2000V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance (%)"; Value = "±10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating DC"; Value = "2000V"; VariantName = "[No Variations]"
+Added Component: Designator=J1(FP-SM04B-PASS-TBT_LF_SN-MFG)
+Add component (AddParameter): Name = "Automotive"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Conn"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Conn Gender"; Value = "Male"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Conn Orientation"; Value = "Right Angle"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Class L1"; Value = "Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Class L2"; Value = "Headers and Wire Housings"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Class L3"; Value = "unset"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Description"; Value = "CONN HEADER SMD R/A 4POS 2MM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "5.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "JST"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "SM04B-PASS-TBT(LF)(SN)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number Of Contacts"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number Of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Octopart"; Value = "https://octopart.com/sm04b-pass-tbt%28lf%29%28sn%29-jst-3990422"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SM04B-PASS-TBT(LF)(SN)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "TRUE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature"; Value = "-25°C to +85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Range High"; Value = "+85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Range Low"; Value = "-25°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=J2(FP-SM04B-PASS-TBT_LF_SN-MFG)
+Add component (AddParameter): Name = "Automotive"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Conn"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Conn Gender"; Value = "Male"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Conn Orientation"; Value = "Right Angle"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Class L1"; Value = "Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Class L2"; Value = "Headers and Wire Housings"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Class L3"; Value = "unset"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey Description"; Value = "CONN HEADER SMD R/A 4POS 2MM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "5.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "JST"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "SM04B-PASS-TBT(LF)(SN)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number Of Contacts"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number Of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Octopart"; Value = "https://octopart.com/sm04b-pass-tbt%28lf%29%28sn%29-jst-3990422"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SM04B-PASS-TBT(LF)(SN)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "TRUE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature"; Value = "-25°C to +85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Range High"; Value = "+85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Range Low"; Value = "-25°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=J32(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=O0(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=O1(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=O3(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=O4(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=O5(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=O6(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=O7(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=O8(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=O9(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=O10(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=O11(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=O15(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=O16(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=O17(PIN1)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q1(LQFP-48)
+Added Component: Designator=Q2(INTR-SOT-23-3_V)
+Add component (AddParameter): Name = "Channel Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/6383/irlml2502pbf-6383216.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-Source On Resistance-Max"; Value = "0.045O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-to-Source Voltage [Vdss]"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "International Rectifier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://internationalrectifier.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qg Gate Charge"; Value = "8nC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Power Dissipation"; Value = "1.25W"; VariantName = "[No Variations]"
+Added Component: Designator=Q3(INTR-SOT-23-3_V)
+Add component (AddParameter): Name = "Channel Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/6383/irlml2502pbf-6383216.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-Source On Resistance-Max"; Value = "0.045O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-to-Source Voltage [Vdss]"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "International Rectifier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://internationalrectifier.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qg Gate Charge"; Value = "8nC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Power Dissipation"; Value = "1.25W"; VariantName = "[No Variations]"
+Added Component: Designator=Q4(INTR-SOT-23-3_V)
+Add component (AddParameter): Name = "Channel Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/6383/irlml2502pbf-6383216.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-Source On Resistance-Max"; Value = "0.045O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-to-Source Voltage [Vdss]"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "International Rectifier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://internationalrectifier.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qg Gate Charge"; Value = "8nC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Power Dissipation"; Value = "1.25W"; VariantName = "[No Variations]"
+Added Component: Designator=Q5(INTR-SOT-23-3_V)
+Add component (AddParameter): Name = "Channel Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/6383/irlml2502pbf-6383216.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-Source On Resistance-Max"; Value = "0.045O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-to-Source Voltage [Vdss]"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "International Rectifier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://internationalrectifier.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qg Gate Charge"; Value = "8nC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Power Dissipation"; Value = "1.25W"; VariantName = "[No Variations]"
+Added Component: Designator=Q6(INTR-SOT-23-3_V)
+Add component (AddParameter): Name = "Channel Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/6383/irlml2502pbf-6383216.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-Source On Resistance-Max"; Value = "0.045O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-to-Source Voltage [Vdss]"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "International Rectifier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://internationalrectifier.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qg Gate Charge"; Value = "8nC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Power Dissipation"; Value = "1.25W"; VariantName = "[No Variations]"
+Added Component: Designator=Q7(INTR-SOT-23-3_V)
+Add component (AddParameter): Name = "Channel Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/6383/irlml2502pbf-6383216.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-Source On Resistance-Max"; Value = "0.045O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-to-Source Voltage [Vdss]"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "International Rectifier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://internationalrectifier.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qg Gate Charge"; Value = "8nC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Power Dissipation"; Value = "1.25W"; VariantName = "[No Variations]"
+Added Component: Designator=Q8(INTR-SOT-23-3_V)
+Add component (AddParameter): Name = "Channel Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/6383/irlml2502pbf-6383216.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-Source On Resistance-Max"; Value = "0.045O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-to-Source Voltage [Vdss]"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "International Rectifier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://internationalrectifier.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qg Gate Charge"; Value = "8nC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Power Dissipation"; Value = "1.25W"; VariantName = "[No Variations]"
+Added Component: Designator=Q9(INTR-SOT-23-3_V)
+Add component (AddParameter): Name = "Channel Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/6383/irlml2502pbf-6383216.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-Source On Resistance-Max"; Value = "0.045O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-to-Source Voltage [Vdss]"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "International Rectifier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://internationalrectifier.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qg Gate Charge"; Value = "8nC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Power Dissipation"; Value = "1.25W"; VariantName = "[No Variations]"
+Added Component: Designator=Q10(INTR-SOT-23-3_V)
+Add component (AddParameter): Name = "Channel Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/6383/irlml2502pbf-6383216.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-Source On Resistance-Max"; Value = "0.045O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-to-Source Voltage [Vdss]"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "International Rectifier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://internationalrectifier.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qg Gate Charge"; Value = "8nC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Power Dissipation"; Value = "1.25W"; VariantName = "[No Variations]"
+Added Component: Designator=Q11(8S1_N)
+Added Component: Designator=Q12(INTR-SOT-23-3_V)
+Add component (AddParameter): Name = "Channel Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/6383/irlml2502pbf-6383216.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-Source On Resistance-Max"; Value = "0.045O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-to-Source Voltage [Vdss]"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "International Rectifier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://internationalrectifier.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qg Gate Charge"; Value = "8nC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Power Dissipation"; Value = "1.25W"; VariantName = "[No Variations]"
+Added Component: Designator=Q13(INTR-SOT-23-3_V)
+Add component (AddParameter): Name = "Channel Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/6383/irlml2502pbf-6383216.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-Source On Resistance-Max"; Value = "0.045O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-to-Source Voltage [Vdss]"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "International Rectifier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://internationalrectifier.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qg Gate Charge"; Value = "8nC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Power Dissipation"; Value = "1.25W"; VariantName = "[No Variations]"
+Added Component: Designator=Q14(INTR-SOT-23-3_V)
+Add component (AddParameter): Name = "Channel Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/6383/irlml2502pbf-6383216.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-Source On Resistance-Max"; Value = "0.045O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-to-Source Voltage [Vdss]"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "International Rectifier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://internationalrectifier.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qg Gate Charge"; Value = "8nC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Power Dissipation"; Value = "1.25W"; VariantName = "[No Variations]"
+Added Component: Designator=Q17(INTR-SOT-23-3_V)
+Add component (AddParameter): Name = "Channel Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/6383/irlml2502pbf-6383216.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-Source On Resistance-Max"; Value = "0.045O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-to-Source Voltage [Vdss]"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "International Rectifier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://internationalrectifier.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qg Gate Charge"; Value = "8nC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Power Dissipation"; Value = "1.25W"; VariantName = "[No Variations]"
+Added Component: Designator=Q18(INTR-SOT-23-3_V)
+Add component (AddParameter): Name = "Channel Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/6383/irlml2502pbf-6383216.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-Source On Resistance-Max"; Value = "0.045O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-to-Source Voltage [Vdss]"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "International Rectifier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://internationalrectifier.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qg Gate Charge"; Value = "8nC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Power Dissipation"; Value = "1.25W"; VariantName = "[No Variations]"
+Added Component: Designator=Q19(INTR-SOT-23-3_V)
+Add component (AddParameter): Name = "Channel Type"; Value = "N-Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/6383/irlml2502pbf-6383216.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Apr-14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-Source On Resistance-Max"; Value = "0.045O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-to-Source Voltage [Vdss]"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "International Rectifier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://internationalrectifier.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT-23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qg Gate Charge"; Value = "8nC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Power Dissipation"; Value = "1.25W"; VariantName = "[No Variations]"
+Added Component: Designator=R1(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Component: Designator=R2(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Component: Designator=R3(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Component: Designator=R4(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Component: Designator=R5(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Component: Designator=R6(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Component: Designator=R7(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Component: Designator=R8(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Component: Designator=R9(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Component: Designator=R10(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Component: Designator=R11(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Component: Designator=R12(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Component: Designator=R13(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Component: Designator=R14(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Component: Designator=R17(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Component: Designator=R18(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Component: Designator=R19(RESC1005X40X25NL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402JR-070RL"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=J1-4
+Added Pin To Net: NetName=GND Pin=J1-5
+Added Pin To Net: NetName=GND Pin=J1-6
+Added Pin To Net: NetName=GND Pin=J2-4
+Added Pin To Net: NetName=GND Pin=J2-5
+Added Pin To Net: NetName=GND Pin=J2-6
+Added Pin To Net: NetName=GND Pin=Q1-7
+Added Pin To Net: NetName=GND Pin=Q2-2
+Added Pin To Net: NetName=GND Pin=Q3-2
+Added Pin To Net: NetName=GND Pin=Q4-2
+Added Pin To Net: NetName=GND Pin=Q5-2
+Added Pin To Net: NetName=GND Pin=Q6-2
+Added Pin To Net: NetName=GND Pin=Q7-2
+Added Pin To Net: NetName=GND Pin=Q8-2
+Added Pin To Net: NetName=GND Pin=Q9-2
+Added Pin To Net: NetName=GND Pin=Q10-2
+Added Pin To Net: NetName=GND Pin=Q11-5
+Added Pin To Net: NetName=GND Pin=Q12-2
+Added Pin To Net: NetName=GND Pin=Q13-2
+Added Pin To Net: NetName=GND Pin=Q14-2
+Added Pin To Net: NetName=GND Pin=Q17-2
+Added Pin To Net: NetName=GND Pin=Q18-2
+Added Pin To Net: NetName=GND Pin=Q19-2
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=GND Pin=R3-1
+Added Pin To Net: NetName=GND Pin=R4-1
+Added Pin To Net: NetName=GND Pin=R5-1
+Added Pin To Net: NetName=GND Pin=R6-1
+Added Pin To Net: NetName=GND Pin=R7-1
+Added Pin To Net: NetName=GND Pin=R8-1
+Added Pin To Net: NetName=GND Pin=R9-1
+Added Pin To Net: NetName=GND Pin=R10-2
+Added Pin To Net: NetName=GND Pin=R12-1
+Added Pin To Net: NetName=GND Pin=R13-1
+Added Pin To Net: NetName=GND Pin=R14-1
+Added Pin To Net: NetName=GND Pin=R17-1
+Added Pin To Net: NetName=GND Pin=R18-1
+Added Pin To Net: NetName=GND Pin=R19-1
+Added Net: Name=GND
+Added Pin To Net: NetName=NetA0_1 Pin=A0-1
+Added Pin To Net: NetName=NetA0_1 Pin=Q1-11
+Added Net: Name=NetA0_1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=Q1-12
+Added Net: Name=NetA1_1
+Added Pin To Net: NetName=NetA2_1 Pin=A2-1
+Added Pin To Net: NetName=NetA2_1 Pin=Q1-13
+Added Net: Name=NetA2_1
+Added Pin To Net: NetName=NetA3_1 Pin=A3-1
+Added Pin To Net: NetName=NetA3_1 Pin=Q1-14
+Added Net: Name=NetA3_1
+Added Pin To Net: NetName=NetA4_1 Pin=A4-1
+Added Pin To Net: NetName=NetA4_1 Pin=Q1-15
+Added Net: Name=NetA4_1
+Added Pin To Net: NetName=NetA5_1 Pin=A5-1
+Added Pin To Net: NetName=NetA5_1 Pin=Q1-16
+Added Net: Name=NetA5_1
+Added Pin To Net: NetName=NetA6_1 Pin=A6-1
+Added Pin To Net: NetName=NetA6_1 Pin=Q1-17
+Added Net: Name=NetA6_1
+Added Pin To Net: NetName=NetA7_1 Pin=A7-1
+Added Pin To Net: NetName=NetA7_1 Pin=Q1-18
+Added Net: Name=NetA7_1
+Added Pin To Net: NetName=NetA8_1 Pin=A8-1
+Added Pin To Net: NetName=NetA8_1 Pin=Q1-19
+Added Net: Name=NetA8_1
+Added Pin To Net: NetName=NetA9_1 Pin=A9-1
+Added Pin To Net: NetName=NetA9_1 Pin=Q1-20
+Added Net: Name=NetA9_1
+Added Pin To Net: NetName=NetA10_1 Pin=A10-1
+Added Pin To Net: NetName=NetA10_1 Pin=Q1-21
+Added Net: Name=NetA10_1
+Added Pin To Net: NetName=NetA11_1 Pin=A11-1
+Added Pin To Net: NetName=NetA11_1 Pin=Q1-22
+Added Net: Name=NetA11_1
+Added Pin To Net: NetName=NetA15_1 Pin=A15-1
+Added Pin To Net: NetName=NetA15_1 Pin=Q1-23
+Added Net: Name=NetA15_1
+Added Pin To Net: NetName=NetA16_1 Pin=A16-1
+Added Pin To Net: NetName=NetA16_1 Pin=Q1-24
+Added Net: Name=NetA16_1
+Added Pin To Net: NetName=NetC3_1 Pin=C3-1
+Added Pin To Net: NetName=NetC3_1 Pin=Q1-10
+Added Pin To Net: NetName=NetC3_1 Pin=R11-1
+Added Net: Name=NetC3_1
+Added Pin To Net: NetName=NetJ2_2 Pin=J2-2
+Added Pin To Net: NetName=NetJ2_2 Pin=Q11-7
+Added Net: Name=NetJ2_2
+Added Pin To Net: NetName=NetJ2_3 Pin=J2-3
+Added Pin To Net: NetName=NetJ2_3 Pin=Q11-6
+Added Net: Name=NetJ2_3
+Added Pin To Net: NetName=NetJ32_1 Pin=J32-1
+Added Pin To Net: NetName=NetJ32_1 Pin=Q19-3
+Added Net: Name=NetJ32_1
+Added Pin To Net: NetName=NetO0_1 Pin=O0-1
+Added Pin To Net: NetName=NetO0_1 Pin=Q12-3
+Added Net: Name=NetO0_1
+Added Pin To Net: NetName=NetO1_1 Pin=O1-1
+Added Pin To Net: NetName=NetO1_1 Pin=Q13-3
+Added Net: Name=NetO1_1
+Added Pin To Net: NetName=NetO3_1 Pin=O3-1
+Added Pin To Net: NetName=NetO3_1 Pin=Q9-3
+Added Net: Name=NetO3_1
+Added Pin To Net: NetName=NetO4_1 Pin=O4-1
+Added Pin To Net: NetName=NetO4_1 Pin=Q2-3
+Added Net: Name=NetO4_1
+Added Pin To Net: NetName=NetO5_1 Pin=O5-1
+Added Pin To Net: NetName=NetO5_1 Pin=Q3-3
+Added Net: Name=NetO5_1
+Added Pin To Net: NetName=NetO6_1 Pin=O6-1
+Added Pin To Net: NetName=NetO6_1 Pin=Q4-3
+Added Net: Name=NetO6_1
+Added Pin To Net: NetName=NetO7_1 Pin=O7-1
+Added Pin To Net: NetName=NetO7_1 Pin=Q5-3
+Added Net: Name=NetO7_1
+Added Pin To Net: NetName=NetO8_1 Pin=O8-1
+Added Pin To Net: NetName=NetO8_1 Pin=Q6-3
+Added Net: Name=NetO8_1
+Added Pin To Net: NetName=NetO9_1 Pin=O9-1
+Added Pin To Net: NetName=NetO9_1 Pin=Q7-3
+Added Net: Name=NetO9_1
+Added Pin To Net: NetName=NetO10_1 Pin=O10-1
+Added Pin To Net: NetName=NetO10_1 Pin=Q8-3
+Added Net: Name=NetO10_1
+Added Pin To Net: NetName=NetO11_1 Pin=O11-1
+Added Pin To Net: NetName=NetO11_1 Pin=Q10-3
+Added Net: Name=NetO11_1
+Added Pin To Net: NetName=NetO15_1 Pin=O15-1
+Added Pin To Net: NetName=NetO15_1 Pin=Q17-3
+Added Net: Name=NetO15_1
+Added Pin To Net: NetName=NetO16_1 Pin=O16-1
+Added Pin To Net: NetName=NetO16_1 Pin=Q18-3
+Added Net: Name=NetO16_1
+Added Pin To Net: NetName=NetO17_1 Pin=O17-1
+Added Pin To Net: NetName=NetO17_1 Pin=Q14-3
+Added Net: Name=NetO17_1
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=NetQ1_1 Pin=Q9-1
+Added Pin To Net: NetName=NetQ1_1 Pin=R8-2
+Added Net: Name=NetQ1_1
+Added Pin To Net: NetName=NetQ1_2 Pin=Q1-2
+Added Pin To Net: NetName=NetQ1_2 Pin=Q13-1
+Added Pin To Net: NetName=NetQ1_2 Pin=R13-2
+Added Net: Name=NetQ1_2
+Added Pin To Net: NetName=NetQ1_3 Pin=Q1-3
+Added Pin To Net: NetName=NetQ1_3 Pin=Q12-1
+Added Pin To Net: NetName=NetQ1_3 Pin=R12-2
+Added Net: Name=NetQ1_3
+Added Pin To Net: NetName=NetQ1_25 Pin=Q1-25
+Added Pin To Net: NetName=NetQ1_25 Pin=Q19-1
+Added Pin To Net: NetName=NetQ1_25 Pin=R19-2
+Added Net: Name=NetQ1_25
+Added Pin To Net: NetName=NetQ1_29 Pin=Q1-29
+Added Pin To Net: NetName=NetQ1_29 Pin=Q11-4
+Added Net: Name=NetQ1_29
+Added Pin To Net: NetName=NetQ1_32 Pin=Q1-32
+Added Pin To Net: NetName=NetQ1_32 Pin=Q11-1
+Added Net: Name=NetQ1_32
+Added Pin To Net: NetName=NetQ1_34 Pin=Q1-34
+Added Pin To Net: NetName=NetQ1_34 Pin=Q11-2
+Added Pin To Net: NetName=NetQ1_34 Pin=Q11-3
+Added Net: Name=NetQ1_34
+Added Pin To Net: NetName=NetQ1_40 Pin=Q1-40
+Added Pin To Net: NetName=NetQ1_40 Pin=Q10-1
+Added Pin To Net: NetName=NetQ1_40 Pin=R9-2
+Added Net: Name=NetQ1_40
+Added Pin To Net: NetName=NetQ1_41 Pin=Q1-41
+Added Pin To Net: NetName=NetQ1_41 Pin=Q8-1
+Added Pin To Net: NetName=NetQ1_41 Pin=R7-2
+Added Net: Name=NetQ1_41
+Added Pin To Net: NetName=NetQ1_43 Pin=Q1-43
+Added Pin To Net: NetName=NetQ1_43 Pin=Q7-1
+Added Pin To Net: NetName=NetQ1_43 Pin=R6-2
+Added Net: Name=NetQ1_43
+Added Pin To Net: NetName=NetQ1_44 Pin=Q1-44
+Added Pin To Net: NetName=NetQ1_44 Pin=Q6-1
+Added Pin To Net: NetName=NetQ1_44 Pin=R5-2
+Added Net: Name=NetQ1_44
+Added Pin To Net: NetName=NetQ1_45 Pin=Q1-45
+Added Pin To Net: NetName=NetQ1_45 Pin=Q5-1
+Added Pin To Net: NetName=NetQ1_45 Pin=R4-2
+Added Net: Name=NetQ1_45
+Added Pin To Net: NetName=NetQ1_46 Pin=Q1-46
+Added Pin To Net: NetName=NetQ1_46 Pin=Q4-1
+Added Pin To Net: NetName=NetQ1_46 Pin=R3-2
+Added Net: Name=NetQ1_46
+Added Pin To Net: NetName=NetQ1_47 Pin=Q1-47
+Added Pin To Net: NetName=NetQ1_47 Pin=Q3-1
+Added Pin To Net: NetName=NetQ1_47 Pin=R2-2
+Added Net: Name=NetQ1_47
+Added Pin To Net: NetName=NetQ1_48 Pin=Q1-48
+Added Pin To Net: NetName=NetQ1_48 Pin=Q2-1
+Added Pin To Net: NetName=NetQ1_48 Pin=R1-2
+Added Net: Name=NetQ1_48
+Added Pin To Net: NetName=O15IN Pin=Q1-39
+Added Pin To Net: NetName=O15IN Pin=Q17-1
+Added Pin To Net: NetName=O15IN Pin=R17-2
+Added Net: Name=O15IN
+Added Pin To Net: NetName=O16IN Pin=Q1-38
+Added Pin To Net: NetName=O16IN Pin=Q18-1
+Added Pin To Net: NetName=O16IN Pin=R18-2
+Added Net: Name=O16IN
+Added Pin To Net: NetName=O17IN Pin=Q1-37
+Added Pin To Net: NetName=O17IN Pin=Q14-1
+Added Pin To Net: NetName=O17IN Pin=R14-2
+Added Net: Name=O17IN
+Added Pin To Net: NetName=SWCLK Pin=J1-2
+Added Pin To Net: NetName=SWCLK Pin=Q1-36
+Added Pin To Net: NetName=SWCLK Pin=R10-1
+Added Net: Name=SWCLK
+Added Pin To Net: NetName=SWDIO Pin=A17-1
+Added Pin To Net: NetName=SWDIO Pin=J1-3
+Added Pin To Net: NetName=SWDIO Pin=Q1-35
+Added Net: Name=SWDIO
+Added Pin To Net: NetName=VCC Pin=C1-1
+Added Pin To Net: NetName=VCC Pin=C2-1
+Added Pin To Net: NetName=VCC Pin=C4-2
+Added Pin To Net: NetName=VCC Pin=C5-2
+Added Pin To Net: NetName=VCC Pin=C6-2
+Added Pin To Net: NetName=VCC Pin=C7-2
+Added Pin To Net: NetName=VCC Pin=J1-1
+Added Pin To Net: NetName=VCC Pin=J2-1
+Added Pin To Net: NetName=VCC Pin=Q1-4
+Added Pin To Net: NetName=VCC Pin=Q1-6
+Added Pin To Net: NetName=VCC Pin=Q11-8
+Added Pin To Net: NetName=VCC Pin=R11-2
+Added Net: Name=VCC
+Added Class: Name=autowatering
+Added Room: Name=autowatering

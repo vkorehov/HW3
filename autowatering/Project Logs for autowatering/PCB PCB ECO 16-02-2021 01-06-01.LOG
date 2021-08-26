@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=VCC Pin=J2-1
+Removed Pin From Net: NetName=GND Pin=J2-4
+Removed Pin From Net: NetName=NetJ2_3 Pin=Q11-6
+Removed Pin From Net: NetName=NetJ2_2 Pin=Q11-7
+Added Pin To Net: NetName=GND Pin=J2-1
+Added Pin To Net: NetName=VCC Pin=J2-4
+Added Pin To Net: NetName=NetJ2_2 Pin=Q11-6
+Added Pin To Net: NetName=NetJ2_3 Pin=Q11-7
+Added Room: Name=autowatering
