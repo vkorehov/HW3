@@ -98,8 +98,12 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
-
+  DISPLAY_Init();
   /* Infinite loop */
+  ssd1306_SetCursor(0,0);
+  ssd1306_WriteString("Hello world", 10, 7, Font7x10, White);  
+  ssd1306_DrawPixel(16, 16, White);  
+  ssd1306_UpdateScreen();
   /* USER CODE BEGIN WHILE */
   while (1)
   {

@@ -1,1 +1,4 @@
-Record=TopLevelDocument|FileName=keypad.SchDoc
+Record=TopLevelDocument|FileName=keypad.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=keypad.SchDoc|FileName=lcd.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=keypad.SchDoc|FileName=main.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=keypad.SchDoc|FileName=phone.SchDoc|SheetNumber=1
