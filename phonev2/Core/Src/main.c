@@ -18,6 +18,8 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <string.h>
+
 #include "main.h"
 #include "dac.h"
 #include "dma.h"
@@ -25,6 +27,7 @@
 #include "spi.h"
 #include "usart.h"
 #include "gpio.h"
+
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -61,6 +64,15 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN 0 */
 
 /* USER CODE END 0 */
+#define UART_BUFFER_SIZE 256
+char UART_BUFFER[UART_BUFFER_SIZE] = {0x00};
+uint8_t UART_POS = 0;
+
+void SIM800_PowerUP(void) {
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET); // # PWR Key
+  HAL_Delay(1050); //1050mS
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET); // # PWR Key  
+}
 
 /**
   * @brief  The application entry point.
@@ -99,17 +111,35 @@ int main(void)
 
   /* USER CODE END 2 */
   DISPLAY_Init();
-  /* Infinite loop */
-  ssd1306_SetCursor(0,0);
-  ssd1306_WriteString("Hello world", 10, 7, Font7x10, White);  
-  ssd1306_DrawPixel(16, 16, White);  
-  ssd1306_UpdateScreen();
-  /* USER CODE BEGIN WHILE */
+   
+  // sim800 powerup  
+  //SIM800_PowerUP();
   while (1)
   {
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
+    //UART_POS = 0;
+    //HAL_UART_Transmit (&huart1, "AT\r\n", 4, 100);
+    //uint8_t c = 0;
+    //while(HAL_UART_Receive (&huart1, &c, 1, 100) == HAL_OK) {
+    //  if (UART_POS >= 254) {
+    //    UART_POS = 0;
+    //  }
+    //  UART_BUFFER[UART_POS++] = c;
+    //}
+    ssd1306_SetCursor(0,0);    
+    if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_1))
+    {
+      ssd1306_WriteString("B1=1", 10, 7, Font7x10, White);        
+    } else {
+      ssd1306_WriteString("B1=0", 10, 7, Font7x10, White);        
+    }
+    ssd1306_SetCursor(0,16);    
+    if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1))
+    {
+      ssd1306_WriteString("A1=1", 10, 7, Font7x10, White);        
+    } else {
+      ssd1306_WriteString("A1=0", 10, 7, Font7x10, White);        
+    }    
+    ssd1306_UpdateScreen();  
   }
   /* USER CODE END 3 */
 }

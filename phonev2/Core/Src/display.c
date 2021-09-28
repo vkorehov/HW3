@@ -170,7 +170,7 @@ char ssd1306_WriteChar(char ch, uint8_t FontHeight, uint8_t FontWidth, uint16_t 
     
     // Check if character is valid
     if (ch < 32 || ch > 126)
-        return 0;
+        ch = 32;
     
     // Check remaining space on current line
     if (SSD1306_WIDTH < (CurrentX + FontWidth) ||
@@ -203,14 +203,10 @@ char ssd1306_WriteChar(char ch, uint8_t FontHeight, uint8_t FontWidth, uint16_t 
 char ssd1306_WriteString(char* str, uint8_t FontHeight, uint8_t FontWidth, uint16_t const* fontData, SSD1306_COLOR color) {
     // Write until null-byte
     while (*str) {
-        if (ssd1306_WriteChar(*str, FontHeight, FontWidth, fontData, color) != *str) {
-            // Char could not be written
-            return *str;
-        }
-        
+        ssd1306_WriteChar(*str, FontHeight, FontWidth, fontData, color);
         // Next char
         str++;
-    }    
+    }
     // Everything ok
     return *str;
 }
