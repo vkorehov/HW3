@@ -19,6 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include <string.h>
+#include <stdio.h>
 
 #include "main.h"
 #include "dac.h"
@@ -28,45 +29,12 @@
 #include "usart.h"
 #include "gpio.h"
 
-
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
-
-/* USER CODE END Includes */
-
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
-
-/* USER CODE END PTD */
-
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
-/* USER CODE END PD */
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-
-/* USER CODE END PM */
-
-/* Private variables ---------------------------------------------------------*/
-
-/* USER CODE BEGIN PV */
-
-/* USER CODE END PV */
+void RingReset (void);
+extern TIM_HandleTypeDef htim6;
+extern RTC_HandleTypeDef hrtc;
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
-/* USER CODE BEGIN PFP */
-
-/* USER CODE END PFP */
-
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
-
-/* USER CODE END 0 */
-#define UART_BUFFER_SIZE 256
-char UART_BUFFER[UART_BUFFER_SIZE] = {0x00};
-uint8_t UART_POS = 0;
 
 void SIM800_PowerUP(void) {
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET); // # PWR Key
@@ -74,25 +42,119 @@ void SIM800_PowerUP(void) {
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET); // # PWR Key  
 }
 
+void EnterSleep(void) {
+  DISPLAY_Sleep();
+  // 
+  HAL_EnableDBGStandbyMode();
+  HAL_PWR_EnableBkUpAccess();
+  HAL_PWR_EnableWakeUpPin(PWR_WAKEUP_PIN1);
+  HAL_PWR_EnableWakeUpPin(PWR_WAKEUP_PIN2);  
+  __HAL_PWR_CLEAR_FLAG(PWR_FLAG_WU);
+  __HAL_PWR_CLEAR_FLAG(PWR_FLAG_SB);            
+  HAL_PWR_EnterSTANDBYMode();
+}
+
+extern uint8_t cc;
+extern uint8_t hcc;
+extern uint8_t err;
+uint32_t cunter = 0;
+uint16_t dacBuffer[4] = {
+  0x0000, 0xffff, 0xffff, 0x0000
+};
+
+uint8_t getChargerState(void) {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};  
+  GPIO_InitStruct.Pin = GPIO_PIN_0;
+  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct); // 
+  HAL_Delay(10);
+  uint8_t weak_state = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_6);
+
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct); // 
+  HAL_Delay(10);
+  
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET); // 2k resistor GND
+  uint8_t strong_gnd_state = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET); // 2k resistor 3V3
+  uint8_t strong_3v3_state = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_6);  
+  
+  if (weak_state == 1 && strong_gnd_state == 0 && strong_3v3_state == 1) {
+    return 0; // HiZ, no adapter is connected
+  }
+  if (weak_state == 0 && strong_gnd_state == 0 && strong_3v3_state == 0) {
+    return 1; // Charging
+  }
+  if (weak_state == 0 && strong_gnd_state == 0 && strong_3v3_state == 1) {
+    return 2; // Charging Finished
+  }
+  return 0; // unexpected state
+}
+
+void RingOn(void) {
+  if (HAL_DAC_Start_DMA_Dual(&hdac, (uint32_t*)dacBuffer, 2) != HAL_OK) {
+    Error_Handler();
+  }
+  if (HAL_TIM_Base_Start(&htim6) != HAL_OK) {
+    Error_Handler();    
+  }
+  // turn ON Audio
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_SET); 
+}
+
+void RingOff(void) {
+  // turn OFF Audio
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_RESET);
+  if (HAL_TIM_Base_Stop(&htim6) != HAL_OK) {
+    Error_Handler();
+  }
+  if (HAL_DAC_Stop_DMA_Dual(&hdac) != HAL_OK) {
+    Error_Handler();
+  }
+}
+
+void UARTReset(void);
+void UARTSend(char* data);
+HAL_StatusTypeDef UARTWaitOK(void);
+
+void SIM800_EnsureUP() {
+  UARTReset();
+  UARTSend("AT\r\n");
+  if (UARTWaitOK() != HAL_OK) {
+    SIM800_PowerUP();
+  }
+}
+
+uint8_t kbd_a;
+uint8_t kbd_b;
+uint8_t kbd_c;
+uint8_t kbd_d;
+
+uint8_t alarm = 0;
+//void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc) {
+//  alarm++;
+//}
+
+void MX_RTC_SetTimestamp(uint8_t year, uint8_t month, uint8_t day, uint8_t weekday,
+                         uint8_t hours, uint8_t minutes, uint8_t seconds);
 /**
   * @brief  The application entry point.
   * @retval int
   */
 int main(void)
-{
-  /* USER CODE BEGIN 1 */
-
-  /* USER CODE END 1 */
-
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+{  
   HAL_Init();
-
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
+  //
+  __HAL_RCC_PWR_CLK_ENABLE();
+  uint8_t wakeup = 0;
+  if (__HAL_PWR_GET_FLAG(PWR_FLAG_WU) == SET)
+  {
+    wakeup = 1;
+    __HAL_PWR_CLEAR_FLAG(PWR_FLAG_WU);
+  }
+  
   /* Configure the system clock */
   SystemClock_Config();
 
@@ -102,52 +164,87 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_DAC_Init();
   MX_SPI1_Init();
-  MX_DMA_Init();
-  MX_RTC_Init();
   MX_USART1_UART_Init();
-  /* USER CODE BEGIN 2 */
+  
+  MX_RTC_Init();  
+  
+  if (__HAL_RTC_ALARM_GET_FLAG(&hrtc, RTC_FLAG_ALRAF) == SET) {
+    alarm++;
+    __HAL_RTC_ALARM_CLEAR_FLAG(&hrtc, RTC_FLAG_ALRAF);
+  }
+  
+  if (wakeup == 0) { // initialize Display only after real poweron    
+    DISPLAY_Init();    
+    MX_RTC_SetTimestamp(
+     21, 10, 2, 6,
+     11, 05, 0);  
+    __HAL_RTC_ALARM_CLEAR_FLAG(&hrtc, RTC_FLAG_ALRAF); // clear alarms
+  } else {
+    DISPLAY_ReInit();    
+  }
+  
+  SIM800_EnsureUP();
 
-  /* USER CODE END 2 */
-  DISPLAY_Init();
-   
-  // sim800 powerup  
-  //SIM800_PowerUP();
+  char buff[32] = {0};
+  RTC_TimeTypeDef sTime;
+
+  if (HAL_RTC_GetTime(&hrtc, &sTime, RTC_FORMAT_BIN) != HAL_OK) {
+    Error_Handler();
+  }
+
+  if (wakeup == 0) { // initialize alarm once 
+    // Set Alarm
+    RTC_AlarmTypeDef sAlarm = {0};
+    sAlarm.Alarm = RTC_ALARM_A;
+    sAlarm.AlarmTime = sTime;
+    sAlarm.AlarmTime.Seconds += 15;
+    sAlarm.AlarmMask = RTC_ALARMMASK_NONE;
+    sAlarm.AlarmDateWeekDaySel = RTC_ALARMDATEWEEKDAYSEL_DATE;
+    sAlarm.AlarmDateWeekDay = 2;
+    if (HAL_RTC_SetAlarm_IT(&hrtc, &sAlarm, RTC_FORMAT_BIN) != HAL_OK) {
+      Error_Handler();
+    }
+  }
+    
   while (1)
   {
-    //UART_POS = 0;
-    //HAL_UART_Transmit (&huart1, "AT\r\n", 4, 100);
-    //uint8_t c = 0;
-    //while(HAL_UART_Receive (&huart1, &c, 1, 100) == HAL_OK) {
-    //  if (UART_POS >= 254) {
-    //    UART_POS = 0;
-    //  }
-    //  UART_BUFFER[UART_POS++] = c;
-    //}
-    ssd1306_SetCursor(0,0);    
-    if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_1))
-    {
-      ssd1306_WriteString("B1=1", 10, 7, Font7x10, White);        
-    } else {
-      ssd1306_WriteString("B1=0", 10, 7, Font7x10, White);        
+    if (__HAL_RTC_ALARM_GET_FLAG(&hrtc, RTC_FLAG_ALRAF) == SET) {
+      alarm++;    
+      __HAL_RTC_ALARM_CLEAR_FLAG(&hrtc, RTC_FLAG_ALRAF);
     }
-    ssd1306_SetCursor(0,16);    
-    if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1))
-    {
-      ssd1306_WriteString("A1=1", 10, 7, Font7x10, White);        
-    } else {
-      ssd1306_WriteString("A1=0", 10, 7, Font7x10, White);        
-    }    
-    ssd1306_UpdateScreen();  
+    cunter++;
+    uint8_t da = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_1);
+    if (da) {
+      kbd_a = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_13);
+      kbd_b = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_12);
+      kbd_c = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_11);
+      kbd_d = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_2);          
+    }
+    uint8_t ch_state = getChargerState();
+    if (HAL_RTC_GetTime(&hrtc, &sTime, RTC_FORMAT_BIN) != HAL_OK) {
+      Error_Handler();
+    }
+
+    ssd1306_Fill(Black);
+    ssd1306_SetCursor(0,0);
+    sprintf(buff, "h=%d m=%d s=%d", sTime.Hours, sTime.Minutes, sTime.Seconds);
+    ssd1306_WriteString(buff, 10, 7, Font7x10, White);
+    ssd1306_SetCursor(0,16);
+    sprintf(buff, "al=%d a=%d b=%d c=%d d=%d", alarm, kbd_a, kbd_b, kbd_c, kbd_d);
+    ssd1306_WriteString(buff, 10, 7, Font7x10, White);        
+    ssd1306_UpdateScreen();
+    
+    if (cunter == 200) {
+      EnterSleep();
+    }
+
   }
   /* USER CODE END 3 */
 }
 
-/**
-  * @brief System Clock Configuration
-  * @retval None
-  */
 void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
@@ -160,12 +257,14 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_LSI|RCC_OSCILLATORTYPE_MSI;
-  RCC_OscInitStruct.LSIState = RCC_LSI_ON;
-  RCC_OscInitStruct.MSIState = RCC_MSI_ON;
-  RCC_OscInitStruct.MSICalibrationValue = 0;
-  RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_5;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSE;
+  RCC_OscInitStruct.LSEState = RCC_LSE_ON;
+  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
+  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL3;
+  RCC_OscInitStruct.PLL.PLLDIV = RCC_PLL_DIV2;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -174,26 +273,23 @@ void SystemClock_Config(void)
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_MSI;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
   {
     Error_Handler();
   }
   PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_RTC;
-  PeriphClkInit.RTCClockSelection = RCC_RTCCLKSOURCE_LSI;
+  PeriphClkInit.RTCClockSelection = RCC_RTCCLKSOURCE_LSE;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
   }
 }
 
-/* USER CODE BEGIN 4 */
-
-/* USER CODE END 4 */
 
 /**
   * @brief  This function is executed in case of error occurrence.

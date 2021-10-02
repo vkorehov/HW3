@@ -1216,6 +1216,9 @@
                     <name>$PROJ_DIR$\..\Core\Src\main.c</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\..\Core\Src\ringbuff.c</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\..\Core\Src\rtc.c</name>
                 </file>
                 <file>

@@ -72,9 +72,23 @@ void ssd1306_SetDisplayOn(const uint8_t on) {
 }
 
 
+void DISPLAY_ReInit(void)
+{  
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_15, GPIO_PIN_SET); // release CS  
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET); // # RST off
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET); // # LCD POWER  
+  DISPLAY_WRITE_CMD(0xAF, 1); /*display ON*/  
+}
+
+void DISPLAY_Sleep(void)
+{
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET); // # LCD POWER
+  DISPLAY_WRITE_CMD(0xAE, 1); /*display off*/  
+}
+
 void DISPLAY_Init(void)
 {  
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_15, GPIO_PIN_SET); // release CS    
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_15, GPIO_PIN_SET); // release CS
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET); // # LCD POWER OFF
 
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET); // # RST  

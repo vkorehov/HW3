@@ -89,10 +89,16 @@ typedef struct {
 void ssd1306_UpdateScreen(void);
 void ssd1306_SetDisplayOn(const uint8_t on);
 void DISPLAY_Init(void);
+void DISPLAY_ReInit(void);
+void DISPLAY_Sleep(void);
 void ssd1306_DrawPixel(uint8_t x, uint8_t y, SSD1306_COLOR color);
 char ssd1306_WriteChar(char ch, uint8_t FontHeight, uint8_t FontWidth, uint16_t const* fontData, SSD1306_COLOR color);
 char ssd1306_WriteString(char* str, uint8_t FontHeight, uint8_t FontWidth, uint16_t const* fontData, SSD1306_COLOR color);
 void ssd1306_SetCursor(uint8_t x, uint8_t y);
+void ssd1306_Fill(SSD1306_COLOR color);
+
+HAL_StatusTypeDef HAL_DAC_Start_DMA_Dual(DAC_HandleTypeDef *hdac, uint32_t *pData, uint32_t Length);
+HAL_StatusTypeDef HAL_DAC_Stop_DMA_Dual(DAC_HandleTypeDef *hdac);
 
 #ifdef __cplusplus
 }
