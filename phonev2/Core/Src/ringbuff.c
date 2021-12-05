@@ -17,13 +17,13 @@ int32_t TIMEOUT = 0;
 
 void UARTSend(char* data) {
   uint16_t size = strlen(data);
-  if (HAL_UART_Transmit_DMA(&huart1, (uint8_t*)data, size) != HAL_OK) {
-    Error_Handler();    
-  }  
+  if (HAL_UART_Transmit_DMA(&huart1, (uint8_t*)data, size)) {
+    Error_Handler();
+  }
 }
 
 HAL_StatusTypeDef UARTWaitOK(void) {
-  TIMEOUT = 1000;
+  TIMEOUT = 10;
   while(TIMEOUT) {
     if (isOK) {
       return HAL_OK;

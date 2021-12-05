@@ -73,14 +73,13 @@ void MX_RTC_Init(void)
   }
   /** Enable the WakeUp
   */
-  if (HAL_RTCEx_SetWakeUpTimer(&hrtc, 0, RTC_WAKEUPCLOCK_RTCCLK_DIV16) != HAL_OK)
-  {
-    Error_Handler();
-  }
+  //if (HAL_RTCEx_SetWakeUpTimer(&hrtc, 0, RTC_WAKEUPCLOCK_RTCCLK_DIV16) != HAL_OK)
+  //{
+  //  Error_Handler();
+  //}
   
   //HAL_NVIC_SetPriority(RTC_Alarm_IRQn, 0, 0);
-  //HAL_NVIC_EnableIRQ(RTC_Alarm_IRQn);
-  
+  //HAL_NVIC_EnableIRQ(RTC_Alarm_IRQn);  
 }
 
 void HAL_RTC_MspInit(RTC_HandleTypeDef* rtcHandle)

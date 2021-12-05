@@ -33,6 +33,10 @@ void RingReset (void);
 extern TIM_HandleTypeDef htim6;
 extern RTC_HandleTypeDef hrtc;
 
+void UARTReset(void);
+void UARTSend(char* data);
+HAL_StatusTypeDef UARTWaitOK(void);
+
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 
@@ -42,15 +46,45 @@ void SIM800_PowerUP(void) {
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET); // # PWR Key  
 }
 
+void SIM800_EnsureUP() {
+  UARTReset();
+  UARTSend("AT\r\n");
+  if (UARTWaitOK() != HAL_OK) {
+    SIM800_PowerUP();
+  }
+}
+
+void SIM800_Wakeup(void) {
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_RESET); // set DTR low , 50ms wait is required
+  // intelligent wait
+  while(1) {
+    UARTReset();    
+    UARTSend("AT\r\n");
+    if (UARTWaitOK() == HAL_OK) {
+      break;
+    }
+  }
+}
+
+void SIM800_Sleep(void) {
+  UARTReset();
+  UARTSend("AT+CSCLK=1\r\n");
+  if (UARTWaitOK() != HAL_OK) {
+    Error_Handler();
+  }
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_SET); // set DTR high
+}
+
 void EnterSleep(void) {
   DISPLAY_Sleep();
+  SIM800_Sleep();
   // 
   HAL_EnableDBGStandbyMode();
-  HAL_PWR_EnableBkUpAccess();
+  //HAL_PWR_EnableBkUpAccess();
   HAL_PWR_EnableWakeUpPin(PWR_WAKEUP_PIN1);
   HAL_PWR_EnableWakeUpPin(PWR_WAKEUP_PIN2);  
   __HAL_PWR_CLEAR_FLAG(PWR_FLAG_WU);
-  __HAL_PWR_CLEAR_FLAG(PWR_FLAG_SB);            
+  __HAL_PWR_CLEAR_FLAG(PWR_FLAG_SB);  
   HAL_PWR_EnterSTANDBYMode();
 }
 
@@ -115,18 +149,6 @@ void RingOff(void) {
   }
 }
 
-void UARTReset(void);
-void UARTSend(char* data);
-HAL_StatusTypeDef UARTWaitOK(void);
-
-void SIM800_EnsureUP() {
-  UARTReset();
-  UARTSend("AT\r\n");
-  if (UARTWaitOK() != HAL_OK) {
-    SIM800_PowerUP();
-  }
-}
-
 uint8_t kbd_a;
 uint8_t kbd_b;
 uint8_t kbd_c;
@@ -164,10 +186,15 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  
   MX_DMA_Init();
   MX_DAC_Init();
   MX_SPI1_Init();
   MX_USART1_UART_Init();
+
+  if (wakeup == 1) {
+     SIM800_Wakeup(); // wakeup, in case in from sleep, etc
+  }
   
   MX_RTC_Init();  
   
@@ -183,7 +210,7 @@ int main(void)
      11, 05, 0);  
     __HAL_RTC_ALARM_CLEAR_FLAG(&hrtc, RTC_FLAG_ALRAF); // clear alarms
   } else {
-    DISPLAY_ReInit();    
+    DISPLAY_ReInit();
   }
   
   SIM800_EnsureUP();
@@ -212,7 +239,7 @@ int main(void)
   while (1)
   {
     if (__HAL_RTC_ALARM_GET_FLAG(&hrtc, RTC_FLAG_ALRAF) == SET) {
-      alarm++;    
+      alarm++;
       __HAL_RTC_ALARM_CLEAR_FLAG(&hrtc, RTC_FLAG_ALRAF);
     }
     cunter++;
