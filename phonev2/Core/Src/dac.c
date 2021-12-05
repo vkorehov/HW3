@@ -31,6 +31,25 @@ uint8_t cc = 0;
 uint8_t hcc = 0;
 uint8_t err = 0;
 
+void DAC_Disable(void) {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};  
+  GPIO_InitStruct.Pin = GPIO_PIN_4|GPIO_PIN_5;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);  
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);     
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);       
+}
+
+void DAC_Enable(void) {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};  
+  GPIO_InitStruct.Pin = GPIO_PIN_4|GPIO_PIN_5;
+  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);  
+}
+
+
 void DAC_DMAHalfConvCpltDual(DMA_HandleTypeDef *hdma) {
   hcc++;
 }
@@ -78,8 +97,8 @@ HAL_StatusTypeDef HAL_DAC_Start_DMA_Dual(DAC_HandleTypeDef *hdac, uint32_t *pDat
   /* Enable the selected DAC DMA request */
   SET_BIT(hdac->Instance->CR, DAC_CR_DMAEN1);
   
-  /* Get DHR12LD address */
-  tmpreg = (uint32_t)&hdac->Instance->DHR12LD;
+  /* Get DHR12RD address */
+  tmpreg = (uint32_t)&hdac->Instance->DHR12RD;
   
   /* Enable the DMA channel */
   /* Enable the DAC DMA underrun interrupt */
@@ -143,9 +162,10 @@ void MX_DAC_Init(void)
   TIM_MasterConfigTypeDef sMasterConfig = {0};
 
   htim6.Instance = TIM6;
-  htim6.Init.Prescaler = 10;
+  htim6.Init.Prescaler = 0;
   htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim6.Init.Period = 2000;
+  htim6.Init.Period = 180;
+  
   if (HAL_TIM_Base_Init(&htim6) != HAL_OK)
   {
     Error_Handler();
@@ -156,9 +176,7 @@ void MX_DAC_Init(void)
   {
     Error_Handler();
   }
-  //__HAL_TIM_ENABLE_DMA(TIM2, TIM_DMA_TRIGGER)
-  //htim6.Instance->EGR = TIM_EGR_UG;
-    
+  
   DAC_ChannelConfTypeDef sConfig = {0};
   /** DAC Initialization
   */

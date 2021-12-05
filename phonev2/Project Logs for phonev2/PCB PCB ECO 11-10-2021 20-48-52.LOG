@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=NetC48_2 Pin=J3-2
+Added Pin To Net: NetName=NetC48_2 Pin=J3-1
+Added Pin To Net: NetName=NetJ3_2 Pin=J3-2
+Added Pin To Net: NetName=NetJ3_2 Pin=U2-8
+Added Net: Name=NetJ3_2
+Added Room: Name=keypad
+Added Room: Name=lcd
+Added Room: Name=main
+Added Room: Name=phone

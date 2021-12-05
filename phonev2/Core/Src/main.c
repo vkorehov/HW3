@@ -33,6 +33,9 @@ void RingReset (void);
 extern TIM_HandleTypeDef htim6;
 extern RTC_HandleTypeDef hrtc;
 
+extern uint32_t sine_wave;
+extern const uint16_t loop[13050];
+
 void UARTReset(void);
 void UARTSend(char* data);
 HAL_StatusTypeDef UARTWaitOK(void);
@@ -46,12 +49,155 @@ void SIM800_PowerUP(void) {
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET); // # PWR Key  
 }
 
-void SIM800_EnsureUP() {
+void DAC_Disable(void);
+void DAC_Enable(void);
+
+uint8_t SIM800_TestSound(void) {
+  // turn ON Audio
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_SET);
+  // tie to GND DAC  
+  DAC_Disable();
+
+  UARTReset();  
+  UARTSend("AT+CMICBIAS=1\r\n"); // 1 turn On bias, 2 turn Off bias
+  if (UARTWaitOK() != HAL_OK) {
+    // failed to adjust mic level
+    return 1;
+  }  
+  
+  UARTReset();  
+  UARTSend("AT+CMIC=0,15\r\n");// 0 == 0db, 15 == +22.5dB
+  if (UARTWaitOK() != HAL_OK) {
+    // failed to adjust mic level
+    return 1;
+  }
+        
+  UARTReset();  
+  UARTSend("AT+SIDET=0,8\r\n"); //  0 == 0db .. 15 == +22,5dB
+  if (UARTWaitOK() != HAL_OK) {
+    // failed to adjust side tone level
+    return 1;
+  }
+
+  UARTReset();
+  UARTSend("AT+CLVL=40\r\n"); // 0-100 
+  if (UARTWaitOK() != HAL_OK) {
+    // failed to adjust output gain level
+    return 1;
+  }
+  
+  UARTReset();
+  UARTSend("AT+STTONE=1,8,5000\r\n"); //  0 == 0db .. 15 == +22,5dB
+  if (UARTWaitOK() != HAL_OK) {
+    // failed to adjust side tone level
+    return 1;
+  }
+  return 0;
+}
+
+uint8_t SIM800_Call(void) {
+  // turn ON Audio
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_SET);
+  // tie to GND DAC  
+  DAC_Disable();
+
+  UARTReset();  
+  UARTSend("AT+CMICBIAS=1\r\n"); // 1 turn On bias, 2 turn Off bias
+  if (UARTWaitOK() != HAL_OK) {
+    // failed to adjust mic level
+    return 1;
+  }  
+  
+  UARTReset();  
+  UARTSend("AT+CMIC=0,15\r\n");// 0 == 0db, 15 == +22.5dB
+  if (UARTWaitOK() != HAL_OK) {
+    // failed to adjust mic level
+    return 1;
+  }
+        
+  UARTReset();  
+  UARTSend("AT+SIDET=0,5\r\n"); //  0 == 0db .. 15 == +22,5dB
+  if (UARTWaitOK() != HAL_OK) {
+    // failed to adjust side tone level
+    return 1;
+  }
+  
+  UARTReset();
+  UARTSend("AT+CLVL=80\r\n"); // 0-100 
+  if (UARTWaitOK() != HAL_OK) {
+    // failed to adjust output gain level
+    return 1;
+  }
+  
+  UARTReset();  
+  UARTSend("ATD27087740;\r\n"); // 29616171
+  if (UARTWaitOK() != HAL_OK) {
+    // failed to dial
+    return 1;
+  }
+  // turn OFF Audio
+  //HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_RESET);
+  return 0;
+}
+
+uint8_t SIM800_CellInfo(void) {
+  UARTReset();
+  UARTSend("AT+CGREG?\r\n");
+  if (UARTWaitOK() != HAL_OK) {
+    // failed to register
+    return 2;
+  }
+  UARTReset();
+  UARTSend("AT+COPS?\r\n");
+  if (UARTWaitOK() != HAL_OK) {
+    // failed to get home network info
+    return 3;
+  }
+  UARTReset();
+  UARTSend("AT+CSQ\r\n");
+  if (UARTWaitOK() != HAL_OK) {
+    // failed to get signal quality
+    return 4;
+  }
+  return 0;
+}
+
+
+uint8_t SIM800_EnsureUP(void) {
   UARTReset();
   UARTSend("AT\r\n");
   if (UARTWaitOK() != HAL_OK) {
     SIM800_PowerUP();
   }
+  uint8_t retries = 1;
+  while(retries-- > 0) {
+    UARTReset();
+    UARTSend("AT+CMEE=1\r\n");// enable detailed errors
+    if (UARTWaitOK() != HAL_OK) {
+      // no response from module
+      return 1;
+    }
+    // Check SIM ok
+    UARTReset();
+    UARTSend("AT+CPIN?\r\n");
+    if (UARTWaitOK() != HAL_OK) {
+      // Error occured? try to powercycle module!
+      SIM800_PowerUP();
+      HAL_Delay(1050); //1050mS      
+      UARTReset();
+      UARTSend("AT\r\n");
+      if (UARTWaitOK() != HAL_OK) {
+        SIM800_PowerUP();
+      }
+    } else {
+      break;
+    }
+  }
+  if (retries == 0xff) { // -1
+    // failed to initialize module with sim card
+    return 100;
+  }
+  return 0; // success
 }
 
 void SIM800_Wakeup(void) {
@@ -92,9 +238,6 @@ extern uint8_t cc;
 extern uint8_t hcc;
 extern uint8_t err;
 uint32_t cunter = 0;
-uint16_t dacBuffer[4] = {
-  0x0000, 0xffff, 0xffff, 0x0000
-};
 
 uint8_t getChargerState(void) {
   GPIO_InitTypeDef GPIO_InitStruct = {0};  
@@ -128,23 +271,23 @@ uint8_t getChargerState(void) {
 }
 
 void RingOn(void) {
-  if (HAL_DAC_Start_DMA_Dual(&hdac, (uint32_t*)dacBuffer, 2) != HAL_OK) {
-    Error_Handler();
-  }
+  // turn ON Audio
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_SET);   
   if (HAL_TIM_Base_Start(&htim6) != HAL_OK) {
     Error_Handler();    
   }
-  // turn ON Audio
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_SET); 
+  if (HAL_DAC_Start_DMA_Dual(&hdac, (uint32_t*)loop, sizeof(loop)/4) != HAL_OK) {
+    Error_Handler();
+  }
 }
 
 void RingOff(void) {
   // turn OFF Audio
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_RESET);
-  if (HAL_TIM_Base_Stop(&htim6) != HAL_OK) {
-    Error_Handler();
-  }
   if (HAL_DAC_Stop_DMA_Dual(&hdac) != HAL_OK) {
+    Error_Handler();
+  }  
+  if (HAL_TIM_Base_Stop(&htim6) != HAL_OK) {
     Error_Handler();
   }
 }
@@ -208,12 +351,12 @@ int main(void)
     MX_RTC_SetTimestamp(
      21, 10, 2, 6,
      11, 05, 0);  
-    __HAL_RTC_ALARM_CLEAR_FLAG(&hrtc, RTC_FLAG_ALRAF); // clear alarms
+    __HAL_RTC_ALARM_CLEAR_FLAG(&hrtc, RTC_FLAG_ALRAF); // clear alarms     
   } else {
     DISPLAY_ReInit();
   }
   
-  SIM800_EnsureUP();
+  uint8_t simStatus = SIM800_EnsureUP();
 
   char buff[32] = {0};
   RTC_TimeTypeDef sTime;
@@ -235,7 +378,9 @@ int main(void)
       Error_Handler();
     }
   }
-    
+  
+  uint8_t prevDa = 0;
+  uint8_t ringState = 0;
   while (1)
   {
     if (__HAL_RTC_ALARM_GET_FLAG(&hrtc, RTC_FLAG_ALRAF) == SET) {
@@ -244,12 +389,24 @@ int main(void)
     }
     cunter++;
     uint8_t da = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_1);
-    if (da) {
+    if (da == 1 && prevDa == 0) {
       kbd_a = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_13);
       kbd_b = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_12);
       kbd_c = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_11);
-      kbd_d = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_2);          
+      kbd_d = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_2);      
+      //if (kbd_a && kbd_b && kbd_c && kbd_d && !ringState) {
+      //  RingOn();
+      //  ringState = 1;
+      //} else if (kbd_a && kbd_b && kbd_c && kbd_d && ringState) {
+      //  RingOff();
+      //  ringState = 0;        
+      //}
+      if (!kbd_a && kbd_b && kbd_c && kbd_d) {
+        SIM800_Call();
+      }      
     }
+    prevDa = da;
+    
     uint8_t ch_state = getChargerState();
     if (HAL_RTC_GetTime(&hrtc, &sTime, RTC_FORMAT_BIN) != HAL_OK) {
       Error_Handler();
@@ -260,12 +417,12 @@ int main(void)
     sprintf(buff, "h=%d m=%d s=%d", sTime.Hours, sTime.Minutes, sTime.Seconds);
     ssd1306_WriteString(buff, 10, 7, Font7x10, White);
     ssd1306_SetCursor(0,16);
-    sprintf(buff, "al=%d a=%d b=%d c=%d d=%d", alarm, kbd_a, kbd_b, kbd_c, kbd_d);
+    sprintf(buff, "ss=%d a=%d b=%d c=%d d=%d", simStatus, kbd_a, kbd_b, kbd_c, kbd_d);
     ssd1306_WriteString(buff, 10, 7, Font7x10, White);        
     ssd1306_UpdateScreen();
     
     if (cunter == 200) {
-      EnterSleep();
+      //EnterSleep();
     }
 
   }

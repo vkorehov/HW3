@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\hw-misc\phonev2\PCB.PcbDoc
-Date     : 01/10/2021
-Time     : 07:59:49
+Date     : 11/10/2021
+Time     : 20:55:53
 
 Processing Rule : Clearance Constraint (Gap=0.229mm) (All),(All)
 Rule Violations :0
@@ -22,7 +22,15 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-Rule Violations :0
+   Violation between Un-Routed Net Constraint: Net SPKN Between Pad R100-1(12.649mm,76.842mm) on Top Layer And Via (12.941mm,76.794mm) from Top Layer to Bottom Layer (GND) 
+   Violation between Un-Routed Net Constraint: Net SPKP Between Pad R100-2(12.649mm,77.692mm) on Top Layer And Via (12.944mm,77.832mm) from Top Layer to Bottom Layer (GND) 
+   Violation between Un-Routed Net Constraint: Net NetJ3_2 Between Track (5.916mm,84.964mm)(5.916mm,85.317mm) on Top Layer And Track (5.916mm,84.964mm)(5.916mm,85.317mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetJ3_2 Between Track (5.916mm,84.964mm)(5.916mm,85.317mm) on Top Layer And Track (5.916mm,84.964mm)(5.916mm,85.317mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetJ3_2 Between Track (5.916mm,84.964mm)(5.916mm,85.317mm) on Top Layer And Track (5.916mm,84.964mm)(5.916mm,85.317mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetC48_2 Between Track (6.82mm,84.868mm)(6.82mm,85.343mm) on Top Layer And Track (6.82mm,84.868mm)(6.82mm,85.343mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetC48_2 Between Track (6.82mm,84.868mm)(6.82mm,85.343mm) on Top Layer And Track (6.82mm,84.868mm)(6.82mm,85.343mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetC48_2 Between Track (6.82mm,84.868mm)(6.82mm,85.343mm) on Top Layer And Track (6.82mm,84.868mm)(6.82mm,85.343mm) on Top Layer 
+Rule Violations :8
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
@@ -52,18 +60,25 @@ Processing Rule : Silk To Solder Mask (Clearance=0mm) (IsPad),(All)
 Rule Violations :0
 
 Processing Rule : Silk to Silk (Clearance=0.025mm) (All),(All)
-Rule Violations :0
+   Violation between Silk To Silk Clearance Constraint: (Collision < 0.025mm) Between Text "C10" (17.577mm,72.593mm) on Top Overlay And Text "C30" (16.663mm,74.997mm) on Top Overlay Silk Text to Silk Clearance [0mm]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 0.025mm) Between Text "C28" (19.814mm,78.496mm) on Top Overlay And Text "C9" (20.244mm,76.759mm) on Top Overlay Silk Text to Silk Clearance [0mm]
+   Violation between Silk To Silk Clearance Constraint: (0.009mm < 0.025mm) Between Text "R100" (13.309mm,79.147mm) on Top Overlay And Text "R14" (10.11mm,78.689mm) on Top Overlay Silk Text to Silk Clearance [0.009mm]
+Rule Violations :3
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
 Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
-Rule Violations :0
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.203mm) Between Board Edge And Text "C25" (15.646mm,79.384mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.14mm < 0.203mm) Between Board Edge And Text "C26" (15.985mm,79.451mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.203mm) Between Board Edge And Text "J3" (9.606mm,87.539mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.065mm < 0.203mm) Between Board Edge And Text "R100" (13.309mm,79.147mm) on Top Overlay 
+Rule Violations :4
 
 Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
-Violations Detected : 0
+Violations Detected : 15
 Waived Violations : 0
 Time Elapsed        : 00:00:03

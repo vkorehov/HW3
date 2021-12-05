@@ -6,7 +6,7 @@ extern UART_HandleTypeDef huart1;
 extern DMA_HandleTypeDef hdma_usart1_rx;
 extern DMA_HandleTypeDef hdma_usart1_tx;
 
-#define BUFF_SIZE 20
+#define BUFF_SIZE 64
 
 volatile uint8_t buffer1[BUFF_SIZE];
 volatile uint8_t buffer2[BUFF_SIZE];
